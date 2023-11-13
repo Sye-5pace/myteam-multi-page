@@ -1,7 +1,36 @@
-<main class="w-full ">
-  <section class="flex flex-col bg-midnight-green h-[32.3125rem]">
+<main class="w-full min-h-screen">
+  <section class="flex flex-col bg-midnight-green h-[43.5rem] gap-y-[5.75rem]">
     <app-header></app-header>
-
+    <section class="flex mx-[10.3125rem] justify-between tablet:flex tablet:flex-col tablet:w-[33.875rem] tablet:mx-[7.0625rem]  tablet:gap-y-16 mobile:flex mobile:flex-col mobile:gap-y-10">
+      <div class="flex flex-col gap-y-[2rem]">
+        <h1 class="laptop:text-left tablet:text-[4rem] text-[2.5rem] leading-[2.5rem] text-center text-[#fff] font-bold">Contact</h1>
+        <div class="flex flex-col gap-y-6">
+          <h2 class="laptop:text-left text-light-coral tablet:text-[2rem] tablet:leading-[3rem] text-[2rem] leading-[2.5rem] text-center font-bold">Ask us about</h2>
+          <div class="gap-y-6 flex flex-col mobile:gap-y-8 mobile:mt-8 text-[#fff]">
+            <div class="flex  items-center gap-[1.4375rem] mobile:flex mobile:flex-row mobile:gap-4">
+                <img src ='../assets/icon-person.svg' alt="" class="w-[4rem] h-[4rem]"/>
+                <p class="font-bold text-[1.125rem] leading-[1.75rem]">The quality of our talent network</p>
+            </div>
+            <div class="flex items-center gap-[1.4375rem] mobile:flex mobile:flex-row mobile:gap-4">
+                <img src ='../assets/icon-cog.svg'alt="" />
+                <p class="font-bold text-[1.125rem] leading-[1.75rem] ">Usage & Implementation of our software</p>
+            </div>
+            <div class="flex items-center gap-[1.4375rem] mobile:flex mobile:flex-row mobile:gap-4">
+                <img src ='../assets/icon-chart.svg' alt=""/>
+                <p class="font-bold text-[1.125rem] leading-[1.75rem]">How we help drive innovation</p>
+            </div>                       
+        </div>
+        </div>
+      </div>
+      <form method="POST" id="form"  class="laptop:w-[30.875rem] laptop:gap-y-6 tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] ">
+        <input type="text" id="full-name" name="fullname" placeholder="Name" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+        <input type="email" id="email" name="email" placeholder="Email Address" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+        <input type="text" id="company-name" name="company-name" placeholder="Company Name" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+        <input type="text" id="role" name="role" placeholder="Title" class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+        <textarea type="text" id="message" name="message" placeholder="Message" rows=4 class="hover:border-b hover:border-rapture-blue bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-10 focus:outline-none"></textarea>
+        <button id="submit" class="hover:bg-rapture-blue  hover:border-b hover:border-rapture-blue h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
+    </form>
+    </section>
   </section>
   <app-footer></app-footer>
 </main>

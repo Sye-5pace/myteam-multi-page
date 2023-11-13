@@ -27,8 +27,9 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    plugin(function({addVariant}){
+    plugin(function({addVariant,addComponent}){
       addVariant("children","&>*")
+      
     })
   ],
 }
