@@ -1,7 +1,35 @@
 <main class="flex flex-col">
-  <section class="h-[32.3125rem] bg-midnight-green">
+  <section class="h-[32.3125rem] bg-midnight-green flex flex-col gap-y-[7.75rem] overflow-hidden">
     <app-header></app-header>
-
+    <section class="flex justify-between mx-[10.3125rem]">
+      <h1 class="font-bold text-[4rem] text-[#fff] leading-[6.25rem]">About</h1>
+      <div class="laptop:flex laptop:flex-col laptop:gap-y-10">
+        <div class="laptop:w-[3.125rem] laptop:h-1 laptop:bg-light-coral tablet:hidden mobile:hidden" ></div>
+        <p class="font-semibold leading-[1.75rem] laptop:text-left tablet:h-[8.75rem] tablet:w-[27.5625rem] mobile:w-[20.4375rem] text-[#fff]">
+          We help companies build dynamic teams made up of top global talent.Using our <br>
+          network of passionate professionals we drive innovation and deliver incredible <br>
+          outcomes. Talented, diverse teams shape the best products and experiences.We’ll <br>
+          bring those teams to you.
+        </p>
+      </div>
+    </section>
+    <img alt="about-bg-pattern" class="w-[12.5rem] h-[12.5rem] mobile:ml-[20.4rem]  tablet:ml-[42rem] tablet:mt-[-5.5rem]  relative laptop:left-[78rem] laptop:bottom-[10.8rem]" src='../assets/bg-pattern-about-1-mobile-nav-1.svg'/>
+  </section>
+  <section class="bg-deep-jungle-green w-full h-[62.625rem]  flex items-center">
+    <div class="mx-[10.3125rem] flex flex-col gap-y-[4rem] justify-center">
+      <h2 class="font-livvic text-[#fff] text-[2rem] font-bold text-center ">Meet the directors</h2>
+      <div class="grid grid-cols-3 children:w-[21.875rem] children:h-[17.5625rem] gap-x-[3rem] gap-y-[3rem] children:border">
+        <div class="flex flex-col items-center">
+          <div class="bg-sacramento h-[15.8125rem] "></div>
+          <!-- <div class="w-[4.5rem] rounded-full bg-light-coral z-[99]"></div> -->
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   </section>
   <app-footer></app-footer>
 </main>
