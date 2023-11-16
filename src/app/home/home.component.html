@@ -1,7 +1,22 @@
 <main class="flex flex-col w-full min-h-screen p-0 m-0 border-box">
-  <section class="bg-midnight-green w-full h-[32.3125rem] ">
-
+  <section class="bg-midnight-green w-full h-[43.75rem] flex flex-col gap-y-[8rem]">
     <app-header></app-header>
+    <img class="laptop:absolute laptop:left-[-6.5rem] top-[12.6rem]  tablet:hidden mobile:hidden" src='../assets/bg-pattern-home-1.svg' alt="bg-pattern"/>
+    <div class="laptop:grid laptop:grid-cols-[39.6875rem_27.8125rem] mx-[10.3125rem]  tablet:flex tablet:mx-auto tablet:flex-col tablet:gap-[1.5rem] mobile:flex mobile:flex-col mobile:gap-[1rem]">
+      <h1 class="laptop:text-[6.25rem] laptop:leading-[6.25rem] laptop:text-left tablet:text-[4rem] tablet:leading-[3.5rem] font-livvic font-bold text-[2.5rem] text-[#fff] leading-[2.5rem] text-center">
+        Find the <br> best <span class="text-light-coral">talent</span>
+      </h1>
+      <div class="laptop:flex laptop:flex-col laptop:items-start laptop:justify-between tablet:w-[28.5625rem] tablet:h-[5.25rem] laptop:text-left ">
+        <div class="laptop:w-[3.125rem] laptop:h-1 laptop:bg-[#79C8C7] tablet:hidden mobile:hidden" ></div>
+        <p class="laptop:text-[1.125rem] laptop:text-left font-livvic font-semibold text-[#fff] text-[0.9375rem] leading-[1.75rem] text-center mobile:w-[21.5rem]">
+          Finding the right people and building high performing teams can be hard.
+          Most companies aren’t tapping into the abundance of global talent. 
+          We’re about to change that.
+        </p> 
+      </div>
+    </div>
+    <img class="laptop:self-end absolute top-[32.6rem] right-[7rem] tablet:mx-auto  mobile:self-center  mobile:mt-[4rem] mobile:w-[22.375rem] mobile:h-[12.5rem]" src='../assets/bg-home-pattern.svg' alt="bg-home"/>
   </section>
+  <app-contact-section></app-contact-section>
   <app-footer></app-footer>
 </main>
