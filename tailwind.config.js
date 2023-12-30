@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 module.exports = {
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.html', './src/**/*.ts'],
+  },
+
   content: [
     "./src/**/*.{html,ts}",
   ],
@@ -29,7 +34,7 @@ module.exports = {
   plugins: [
     plugin(function({addVariant,addComponent}){
       addVariant("children","&>*")
-      
+
     })
   ],
 }
